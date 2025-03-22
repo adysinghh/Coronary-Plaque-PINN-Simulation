@@ -51,7 +51,7 @@ To do this, we use **two** main tools:
 
 3. **PINN Simulation:**  
    - We take the bounding box of that segmentation (the smallest rectangle covering all the white plaque pixels).  
-   - A **PINN** is a neural network that solves a **partial differential equation** (PDE). Ours is a 2D elasticity PDE.  
+   - A **PINN** is a neural network that solves a **partial differential equation** (PDE). I used 2D elasticity PDE.  
    - It “learns” a displacement field: basically, how each point in that rectangle would move if you fix one side and push the other.
 
 4. **Dashboard Visualization:**  
@@ -84,7 +84,7 @@ To do this, we use **two** main tools:
 
 4. **Look at the Results**  
    - A web page will pop up (usually `http://localhost:8501`).  
-   - You’ll see the **segmentation** of the plaque in red on top of the CT scan.  
+   - You’ll see the **segmentation** of the plaque in blue on top of the CT scan.  
    - Below that, you’ll see a black-to-white gradient that shows the **displacement** from the PINN.
 
 ---
