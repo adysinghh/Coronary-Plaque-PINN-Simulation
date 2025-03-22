@@ -1,6 +1,9 @@
 # Coronary-Plaque-PINN-Simulation
 Integrated pipeline for coronary plaque segmentation using U-Net and simplified physics-informed simulation (PINN) over bounding-box–based domains extracted from CT scans.
 
+![Segmentation + PINN Output](https://github.com/adysinghh/Coronary-Plaque-PINN-Simulation/raw/main/Image.png)
+
+
 ## Table of Contents
 
 1. [What Is This Project About?](#what-is-this-project-about)  
