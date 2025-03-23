@@ -1,4 +1,4 @@
-! ![Flow Diagram](https://github.com/adysinghh/Coronary-Plaque-PINN-Simulation/blob/main/CoronaryPlaque-PINN-Simulation.png)
+![Flow Diagram](https://github.com/adysinghh/Coronary-Plaque-PINN-Simulation/blob/main/CoronaryPlaque-PINN-Simulation.png)
 
 # Coronary-Plaque-PINN-Simulation
 Integrated pipeline for coronary plaque segmentation using U-Net and simplified physics-informed simulation (PINN) over bounding-box–based domains extracted from CT scans. This is project is purely a Sample Implementation, To use this in real application you need several modification such as available ground truth to train the UNET, and useing the bounded box from the Image rather than the assumed [0,0] and  [1,1] bounded rectangular box.
