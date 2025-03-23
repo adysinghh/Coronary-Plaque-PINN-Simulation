@@ -51,7 +51,7 @@ To do this, we use **two** main tools:
      2.1. **Interpretation of the Final “Segmented” Mask**
         - Because the network is essentially reproducing the input CT image, the brightest areas in the U‑Net’s output will likely be the naturally bright spots (like bone or intense calcifications).
         - When we threshold at 0.8, we get a mask that might highlight some of those bright regions.
-          > [!NOTE]  
+> [!NOTE]  
 > This does not mean the network is truly learning to distinguish plaque from non-plaque. It’s just replicating the input and then we’re forcibly picking out high-intensity pixels.
 
 ### 3. **PINN Simulation:**
