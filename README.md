@@ -59,21 +59,10 @@ To do this, we use **two** main tools:
 - **Domain Setup:**  
   - In our current demo, we use a hardcoded bounding box with coordinates [0, 0] and [1, 1] (a unit square).  
   - *In our case*, this unit square represents the simulation domain. In a real application, we would extract the actual bounding box from the segmented calcified plaque area and then normalize it to a standard domain.
-
-- **What is a PINN?**  
-  - A **Physics-Informed Neural Network (PINN)** is a neural network that is trained not only on data but also by enforcing that its output satisfies a given **partial differential equation (PDE)**.
   
 - **The PDE Used – 2D Linear Elasticity:**  
   - We use a 2D elasticity PDE to model how a material (or in our case, the plaque region) deforms under applied forces.  
   - **Hooke’s Law** is built into this model—it relates the **strain** (how much the material deforms) to the **stress** (the internal forces resisting deformation) using material constants (Lamé constants).  
-  - In our equation, the stress tensor \(\sigma\) is calculated as:  
-    \[
-    \sigma = \lambda (\nabla \cdot \mathbf{u}) I + 2\mu \epsilon(\mathbf{u})
-    \]
-    where:  
-    - \(\mathbf{u}(x, y) = [u(x,y), v(x,y)]\) is the displacement field,  
-    - \(\lambda\) and \(\mu\) are material stiffness constants, and  
-    - \(\epsilon(\mathbf{u})\) is the strain tensor.
     
 - **Boundary Displacement:**  
   - The simulation sets boundary conditions on the unit square:  
