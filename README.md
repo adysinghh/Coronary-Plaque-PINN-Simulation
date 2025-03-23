@@ -48,7 +48,7 @@ To do this, we use **two** main tools:
 2. **U‑Net Segmentation:**  
    - The U‑Net is trained to exactly produce the same image, Since we dont have Ground truth available so we used Ground truth same as the input image, This is an demo implementation in real case we would require corresponding segmented image
    - It outputs the same Image.
-     2.1. **Interpretation of the Final “Segmented” Mask**
+   - 2.1. **Interpretation of the Final “Segmented” Mask**
         - Because the network is essentially reproducing the input CT image, the brightest areas in the U‑Net’s output will likely be the naturally bright spots (like bone or intense calcifications).
         - When we threshold at 0.8, we get a mask that might highlight some of those bright regions.
 > [!NOTE]  
