@@ -42,7 +42,7 @@ To do this, we use **two** main tools:
 ## 3. Main Parts of the Pipeline
 
 1. **Data Preprocessing:**  
-   - We load DICOM files (these are special medical image files) and turn them into easy-to-use arrays.  
+   - We load DICOM files (these are special medical image files) and turn them into Numpy arrays.  
    - We resize and normalize them so the U‑Net can process them consistently.
 
 2. **U‑Net Segmentation:**  
